@@ -8,6 +8,8 @@ import 'package:iot/screens/controls.dart';
 import 'package:iot/screens/notification.dart';
 import 'package:iot/screens/settings.dart';
 import 'package:iot/screens/stats.dart';
+//icons
+import 'package:iconsax/iconsax.dart';
 
 class RootNavigator extends StatefulWidget {
   const RootNavigator({super.key});
@@ -16,7 +18,7 @@ class RootNavigator extends StatefulWidget {
 }
 
 class _RootNavigatorState extends State<RootNavigator> {
-  int index = 1;
+  int index = 2;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,24 +28,29 @@ class _RootNavigatorState extends State<RootNavigator> {
         animationDuration: const Duration(milliseconds: 300),
         items: const [
           Icon(
-            Icons.home,
-            color: Colors.white70,
+            Iconsax.home_15,
+            size: 35,
+            color: Colors.white,
           ),
           Icon(
-            Icons.notifications,
-            color: Colors.white70,
+            Iconsax.notification1,
+            size: 35,
+            color: Colors.white,
           ),
           Icon(
-            Icons.wifi,
-            color: Colors.white70,
+            Iconsax.airdrop5,
+            size: 35,
+            color: Colors.white,
           ),
           Icon(
-            Icons.dashboard,
-            color: Colors.white70,
+            Icons.bar_chart_rounded,
+            size: 35,
+            color: Colors.white,
           ),
           Icon(
             Icons.settings,
-            color: Colors.white70,
+            size: 35,
+            color: Colors.white,
           ),
         ],
         index: index,
