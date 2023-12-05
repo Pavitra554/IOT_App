@@ -1,6 +1,6 @@
 # iot
 
-A new Flutter project.
+IOT App for Home automation.
 
 ## Getting Started
 
@@ -14,3 +14,6 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+### Preview
+![Home Automation App Preview](preview/772shots_so.png)
