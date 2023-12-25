@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
 //Navigation Bar package
-import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+import 'package:google_nav_bar/google_nav_bar.dart';
+
 //Screens
 import 'package:iot/screens/home.dart';
 import 'package:iot/screens/controls.dart';
-import 'package:iot/screens/notification.dart';
 import 'package:iot/screens/settings.dart';
-import 'package:iot/screens/stats.dart';
+
 //icons
-import 'package:iconsax/iconsax.dart';
+import 'package:line_icons/line_icons.dart';
 
 class RootNavigator extends StatefulWidget {
   const RootNavigator({super.key});
@@ -22,43 +22,53 @@ class _RootNavigatorState extends State<RootNavigator> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: CurvedNavigationBar(
-        backgroundColor: Colors.black,
-        color: Colors.grey.shade900,
-        animationDuration: const Duration(milliseconds: 300),
-        items: const [
-          Icon(
-            Iconsax.home_15,
-            size: 35,
-            color: Colors.white,
-          ),
-          Icon(
-            Iconsax.notification1,
-            size: 35,
-            color: Colors.white,
-          ),
-          Icon(
-            Iconsax.airdrop5,
-            size: 35,
-            color: Colors.white,
-          ),
-          Icon(
-            Icons.bar_chart_rounded,
-            size: 35,
-            color: Colors.white,
-          ),
-          Icon(
-            Icons.settings,
-            size: 35,
-            color: Colors.white,
-          ),
-        ],
-        index: index,
-        onTap: (selctedIndex) {
-          setState(() {
-            index = selctedIndex;
-          });
-        },
+      bottomNavigationBar: Container(
+        padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 30),
+        color: Colors.black,
+        child: GNav(
+          backgroundColor: Colors.black,
+          rippleColor: Colors.grey.shade900,
+          tabBackgroundColor: Colors.grey.shade900,
+          hoverColor: Colors.grey.shade900,
+          activeColor: Colors.white,
+          color: Colors.grey.shade400,
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+          duration: const Duration(milliseconds: 400),
+          gap: 6,
+          iconSize: 30,
+          onTabChange: (selctedIndex) {
+            setState(() {
+              index = selctedIndex;
+            });
+          },
+          selectedIndex: index,
+          tabs: const [
+            GButton(
+              icon: LineIcons.home,
+              text: "Home",
+              textStyle: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w400,
+                  color: Colors.white),
+            ),
+            GButton(
+              icon: LineIcons.podcast,
+              text: "Devices",
+              textStyle: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w400,
+                  color: Colors.white),
+            ),
+            GButton(
+              icon: LineIcons.cog,
+              text: "Settings",
+              textStyle: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w400,
+                  color: Colors.white),
+            ),
+          ],
+        ),
       ),
       body: Container(
         alignment: Alignment.center,
@@ -74,15 +84,9 @@ class _RootNavigatorState extends State<RootNavigator> {
         widget = const Home();
         break;
       case 1:
-        widget = const NotificationSc();
-        break;
-      case 2:
         widget = const Control();
         break;
-      case 3:
-        widget = const Stats();
-        break;
-      case 4:
+      case 2:
         widget = const Settings();
         break;
       default:
