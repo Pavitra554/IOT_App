@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+//Lottie Animation
+import 'package:lottie/lottie.dart';
+
 class Home extends StatefulWidget {
   const Home({super.key});
   @override
@@ -13,17 +16,23 @@ class _HomeState extends State<Home> {
         backgroundColor: Colors.black,
         body: Container(
             alignment: Alignment.center,
-            child: const Column(
+            child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
+                Lottie.asset(
+                  'assets/error.json',
+                  width: 300,
+                  height: 300,
+                  fit: BoxFit.fill,
+                ),
+                const Text(
                   'Home Screen',
                   style: TextStyle(
                       color: Colors.white24,
                       fontSize: 40,
                       fontWeight: FontWeight.w700),
                 ),
-                Row(
+                const Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
@@ -35,7 +44,7 @@ class _HomeState extends State<Home> {
                     ),
                     Icon(
                       Icons.warning_amber_outlined,
-                      size: 25,
+                      size: 20,
                       color: Colors.orangeAccent,
                     ),
                   ],

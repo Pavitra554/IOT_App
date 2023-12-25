@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+//Lottie Animation
+import 'package:lottie/lottie.dart';
+
 class Settings extends StatefulWidget {
   const Settings({super.key});
   @override
@@ -13,17 +16,23 @@ class _SettingsState extends State<Settings> {
         backgroundColor: Colors.black,
         body: Container(
             alignment: Alignment.center,
-            child: const Column(
+            child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
+                Lottie.asset(
+                  'assets/error.json',
+                  width: 300,
+                  height: 300,
+                  fit: BoxFit.fill,
+                ),
+                const Text(
                   'Setting Screen',
                   style: TextStyle(
                       color: Colors.white24,
                       fontSize: 40,
                       fontWeight: FontWeight.w700),
                 ),
-                Row(
+                const Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
