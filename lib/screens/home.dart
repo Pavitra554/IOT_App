@@ -21,15 +21,15 @@ class _HomeState extends State<Home> {
               children: [
                 Lottie.asset(
                   'assets/error.json',
-                  width: 300,
-                  height: 300,
+                  width: 230,
+                  height: 230,
                   fit: BoxFit.fill,
                 ),
                 const Text(
                   'Home Screen',
                   style: TextStyle(
                       color: Colors.white24,
-                      fontSize: 40,
+                      fontSize: 30,
                       fontWeight: FontWeight.w700),
                 ),
                 const Row(
@@ -39,7 +39,7 @@ class _HomeState extends State<Home> {
                       'Under Development ',
                       style: TextStyle(
                           color: Colors.white70,
-                          fontSize: 20,
+                          fontSize: 12,
                           fontWeight: FontWeight.w700),
                     ),
                     Icon(
