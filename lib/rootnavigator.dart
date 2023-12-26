@@ -34,7 +34,7 @@ class _RootNavigatorState extends State<RootNavigator> {
           color: Colors.grey.shade400,
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
           duration: const Duration(milliseconds: 400),
-          gap: 6,
+          gap: 4,
           iconSize: 30,
           onTabChange: (selctedIndex) {
             setState(() {
@@ -46,24 +46,27 @@ class _RootNavigatorState extends State<RootNavigator> {
             GButton(
               icon: LineIcons.home,
               text: "Home",
+              iconSize: 22,
               textStyle: TextStyle(
-                  fontSize: 20,
+                  fontSize: 16,
                   fontWeight: FontWeight.w400,
                   color: Colors.white),
             ),
             GButton(
               icon: LineIcons.podcast,
               text: "Devices",
+              iconSize: 22,
               textStyle: TextStyle(
-                  fontSize: 20,
+                  fontSize: 16,
                   fontWeight: FontWeight.w400,
                   color: Colors.white),
             ),
             GButton(
               icon: LineIcons.cog,
               text: "Settings",
+              iconSize: 22,
               textStyle: TextStyle(
-                  fontSize: 20,
+                  fontSize: 16,
                   fontWeight: FontWeight.w400,
                   color: Colors.white),
             ),
