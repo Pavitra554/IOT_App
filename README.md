@@ -21,6 +21,10 @@ This project is an Internet of Things (IoT) Flutter application that allows user
 - **IoT Protocols**: Implement industry-standard IoT protocols for seamless communication with connected devices.
 - **Flask and MicroPython for Server** : Utilize Flask as the backend server framework and MicroPython for microcontroller-based IoT devices.
 
+## Checkout the Server Repository
+
+<a href="https://github.com/Pavitra554/IOT-server" alt="Server Repo">Server Source Code</a>
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
