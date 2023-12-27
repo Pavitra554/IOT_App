@@ -44,7 +44,7 @@ class _SettingsState extends State<Settings> {
                     ),
                     Icon(
                       Icons.warning_amber_outlined,
-                      size: 25,
+                      size: 20,
                       color: Colors.orangeAccent,
                     ),
                   ],

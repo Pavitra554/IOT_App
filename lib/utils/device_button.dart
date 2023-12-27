@@ -18,9 +18,9 @@ class DeviceButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-        padding: const EdgeInsets.all(10),
+        padding: const EdgeInsets.all(8),
         child: Container(
-          padding: const EdgeInsets.all(15),
+          padding: const EdgeInsets.all(14),
           decoration: BoxDecoration(
               color: Colors.grey.shade900,
               borderRadius: BorderRadius.circular(20)),
@@ -34,7 +34,7 @@ class DeviceButton extends StatelessWidget {
                     Text(
                       name,
                       style: TextStyle(
-                          fontSize: 20,
+                          fontSize: 18,
                           fontWeight: FontWeight.w600,
                           color: Colors.white.withOpacity(0.9)),
                     ),
@@ -42,7 +42,7 @@ class DeviceButton extends StatelessWidget {
                       area,
                       style: const TextStyle(
                           height: 1,
-                          fontSize: 14,
+                          fontSize: 12,
                           fontWeight: FontWeight.w400,
                           color: Colors.white54),
                     ),
