@@ -35,4 +35,5 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 
 ### Preview
-![Home Automation App Preview](preview/pre.png)
+
+<img src="preview/pre.png.png" alt="App Screenshot" style="border-radius: 15px;">
