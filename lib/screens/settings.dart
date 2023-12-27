@@ -21,9 +21,7 @@ class _SettingsState extends State<Settings> {
               children: [
                 Lottie.asset(
                   'assets/error.json',
-                  width: 260,
-                  height: 150,
-                  fit: BoxFit.fill,
+                  fit: BoxFit.cover,
                 ),
                 const Text(
                   'Setting Screen',
