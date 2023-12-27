@@ -16,4 +16,5 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 
 ### Preview
-![Home Automation App Preview](preview/772shots_so.png)
+
+![Home Automation App Preview](preview/pre.png)
