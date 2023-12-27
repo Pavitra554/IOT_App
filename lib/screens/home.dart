@@ -21,8 +21,8 @@ class _HomeState extends State<Home> {
               children: [
                 Lottie.asset(
                   'assets/error.json',
-                  width: 230,
-                  height: 230,
+                  width: 260,
+                  height: 150,
                   fit: BoxFit.fill,
                 ),
                 const Text(
