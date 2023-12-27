@@ -36,4 +36,4 @@ samples, guidance on mobile development, and a full API reference.
 
 ### Preview
 
-<img src="preview/pre.png.png" alt="App Screenshot" style="border-radius: 15px;">
+![Home Automation App Preview](preview/pre.png)
