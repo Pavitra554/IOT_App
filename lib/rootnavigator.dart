@@ -18,7 +18,7 @@ class RootNavigator extends StatefulWidget {
 }
 
 class _RootNavigatorState extends State<RootNavigator> {
-  int index = 2;
+  int index = 1;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
